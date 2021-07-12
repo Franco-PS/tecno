@@ -1,0 +1,17 @@
+.main-header{
+    height: 5rem;
+    background-color: orange;
+    border-bottom: 1px solid $border-color;
+    display: flex;
+    align-items: center;
+}
+.main-header-block{
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    // box-sizing: border-box;
+}
+.main-logo{
+    height: 2rem;
+    // margin-top: 1rem;
+}
