@@ -1,3 +1,12 @@
 $max-width: 1200px;
+$header-height: 4rem;
 
-$border-color: #ccc;
+$border-color: rgba(73, 72, 72, 0.315);
+$gray-color: rgba(49, 49, 49, 0.781);
+$black-color: rgba(0, 0, 0, 0.719);
+
+$breack-point:(
+    sm: 540px,
+    md: 720px,
+    lg: 960px
+)

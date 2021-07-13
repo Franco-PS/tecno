@@ -20,9 +20,9 @@ img {
   margin-left: auto; }
 
 .main-header {
-  height: 5rem;
+  height: 4rem;
   background-color: orange;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid rgba(73, 72, 72, 0.315);
   display: flex;
   align-items: center; }
 
@@ -35,17 +35,36 @@ img {
   height: 2rem; }
 
 .menu {
-  display: flex;
   align-items: center;
   margin: 0;
   padding: 0; }
 
 .main-menu {
   list-style: none;
-  display: flex; }
+  padding: 1rem; }
 
 .main-menu-link {
-  color: black;
+  color: rgba(0, 0, 0, 0.719);
   padding: .5em .6em; }
   .main-menu-link:hover {
-    border-bottom: 3px solid rgba(0, 0, 0, 0.39); }
+    border-bottom: 3px solid rgba(0, 0, 0, 0.719); }
+
+.main-nav {
+  position: fixed;
+  top: 4rem;
+  right: -60vw;
+  height: calc(100vh - 4rem);
+  width: 60vw;
+  transition: right .3s;
+  background-color: rosybrown; }
+  @media screen and (min-width: 720px) {
+    .main-nav {
+      background-color: red; } }
+  .main-nav.show {
+    right: 0; }
+
+.botton-scroll {
+  width: 2rem;
+  height: 1.4rem;
+  background: linear-gradient(rgba(49, 49, 49, 0.781) 20%, transparent 20%, transparent 40%, rgba(49, 49, 49, 0.781) 40%, rgba(49, 49, 49, 0.781) 60%, transparent 60%, transparent 80%, rgba(49, 49, 49, 0.781) 80%);
+  cursor: pointer; }
