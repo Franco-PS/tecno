@@ -38,6 +38,9 @@ img {
   align-items: center;
   margin: 0;
   padding: 0; }
+  @media screen and (min-width: 720px) {
+    .menu {
+      display: flex; } }
 
 .main-menu {
   list-style: none;
@@ -59,7 +62,10 @@ img {
   background-color: rosybrown; }
   @media screen and (min-width: 720px) {
     .main-nav {
-      background-color: red; } }
+      position: static;
+      height: auto;
+      width: auto;
+      background: transparent; } }
   .main-nav.show {
     right: 0; }
 
@@ -68,3 +74,6 @@ img {
   height: 1.4rem;
   background: linear-gradient(rgba(49, 49, 49, 0.781) 20%, transparent 20%, transparent 40%, rgba(49, 49, 49, 0.781) 40%, rgba(49, 49, 49, 0.781) 60%, transparent 60%, transparent 80%, rgba(49, 49, 49, 0.781) 80%);
   cursor: pointer; }
+  @media screen and (min-width: 720px) {
+    .botton-scroll {
+      display: none; } }

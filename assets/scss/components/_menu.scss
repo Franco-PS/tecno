@@ -1,8 +1,10 @@
 .menu{
-    // display: flex;
     align-items: center;
     margin: 0;
     padding: 0;
+    @include from(md){
+        display: flex;
+    }
 }
 .main-menu{
     list-style: none;
@@ -24,7 +26,10 @@
     transition:right .3s;
     background-color: rosybrown;
     @include from(md){
-        background-color: red;
+        position: static;
+        height: auto;
+        width: auto;
+        background: transparent;
     }
     //TODO: como funciona el anidamiento de la clase show
     &.show{
@@ -40,4 +45,7 @@
     height: 1.4rem;
     background: linear-gradient($color 20%,transparent 20%,transparent 40%, $color 40%,$color 60%, transparent 60%,transparent 80%,$color 80%);
     cursor: pointer;
+    @include from(md){
+        display: none;
+    }
 }
