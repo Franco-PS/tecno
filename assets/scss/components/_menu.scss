@@ -2,7 +2,7 @@
     align-items: center;
     margin: 0;
     padding: 0;
-    @include from(md){
+    @include rwd(md){
         display: flex;
     }
 }
@@ -18,6 +18,8 @@
     }
 }
 .main-nav{
+    // z-index: 10; mala practica
+    z-index: var(--z-modal);
     position: fixed;
     top: $header-height;
     right: -60vw;
@@ -25,7 +27,7 @@
     width: 60vw;
     transition:right .3s;
     background-color: rosybrown;
-    @include from(md){
+    @include rwd(md){
         position: static;
         height: auto;
         width: auto;
@@ -45,7 +47,7 @@
     height: 1.4rem;
     background: linear-gradient($color 20%,transparent 20%,transparent 40%, $color 40%,$color 60%, transparent 60%,transparent 80%,$color 80%);
     cursor: pointer;
-    @include from(md){
+    @include rwd(md){
         display: none;
     }
 }
