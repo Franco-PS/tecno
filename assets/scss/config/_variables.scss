@@ -10,7 +10,12 @@ $breack-point:(
     md: 720px,
     lg: 960px
 )
-
+//Variables de color
+:root{
+    --color-first:#007BDF;
+    --color-border:#DFE0E0;
+    --color-alert: #ff3c32;
+}
 
 
 // variables de anidamiento
@@ -25,10 +30,14 @@ $breack-point:(
 //Variables de tipografía
 :root{
     --h1-font-size:2rem;
+    --h2-font-size:1.5rem;
+    --h3-font-size:1.25rem;
     --body-font-size:.9rem;
     --small-font-size:.75rem;
     @include rwd(md) {
         --h1-font-size:2.5rem;
+        --h2-font-size:2rem;
+        --h3-font-size:1.5rem;
         --body-font-size:1rem;
         --small-font-size:.8rem;
     }

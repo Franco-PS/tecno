@@ -1,0 +1,36 @@
+.card{
+    margin-bottom: 2rem;
+    border: 1px solid var(--color-border);
+    &__image{
+        width: 100%;
+        // display: block;
+        // background-position: center;
+        // background-size: cover;
+        // object-position: center;
+        // object-fit: cover;
+    }
+    &__content{
+        padding: 1rem;
+        border: 1px solid var(--color-boder);
+    }
+    &__subtitle{
+        margin-top: -1rem;
+        margin-bottom: .5rem;
+        opacity: .6;
+    }
+    &__footer{
+        border-top: 1px solid var(--color-border);
+        margin-top: 1rem;
+        padding-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.card-grid{
+    @include rwd(md){
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+}

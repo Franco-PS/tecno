@@ -17,5 +17,21 @@ const showMenu= (toggleId,navId)=>{
 
 showMenu('botton-scroll','main-nav');
 
-// const view= 
-// if()
+
+// document.body.style.backgroundColor = 'red'
+
+// document.body.classList.add('red')
+
+//declarando los estilos
+// const styles = `
+//     background:green;
+//     color:blue;
+//     margin-bottom:4rem;
+// `
+// document.getElementById('hola').setAttribute('style',styles)
+
+//modificar
+// document.documentElement.style.setProperty('--name','angel')
+
+// leer variables css
+// console.log(getComputedStyle(document.documentElement).getPropertyValue('--name'))

@@ -1,0 +1,13 @@
+[class*=icon-]::before{
+    content: "";
+    display: inline-block;
+    margin-right: 1em;
+    width: 1em;
+    height: 1em;
+}
+
+.icon-location::before{
+    background: url(../img/icon-map.png);
+    background-position: center;
+    background-size: cover;
+}
